@@ -36,17 +36,9 @@ The dataset contains transactions made by credit cards, where we face an extreme
 
 #### 1. Class Distribution
 *This plot highlights the severe imbalance in our target variable.*
-<p align="center">
-  <img src="assets/class_distribution.png" alt="Class Distribution" width="600">
-</p>
 
 #### 2. Correlation Heatmap & Transaction Time
 *An overview of how features correlate with each other and how transaction frequency changes over time.*
-<p align="center">
-  <img src="assets/correlation_matrix.png" alt="Correlation Matrix" width="400">
-  <img src="assets/time_distribution.png" alt="Time Distribution" width="400">
-</p>
-
 ---
 
 ## ⚙️ Feature Engineering & Imbalance Handling
@@ -93,7 +85,7 @@ The models were evaluated comprehensively across key metrics. Below is a compari
 
 ### 📊 Performance Comparison Chart
 <p align="center">
-  <img src="assets/model_comparison.png" alt="Before vs After PCA Comparison" width="800">
+  <img src="E:\Downloads\newplot.png" alt="Before vs After PCA Comparison" width="800">
 </p>
 
 ---
@@ -101,21 +93,13 @@ The models were evaluated comprehensively across key metrics. Below is a compari
 ## 🔍 Key Insights & Threshold Tuning
 
 * **The PCA Trade-off**: Reducing components with PCA speeded up training, but tree-based models like Random Forest and XGBoost achieved **significantly better Precision and F1-scores** using the original features (Without PCA).
-* **Feature Importance**: Using Random Forest (No PCA), we identified the most influential features contributing to fraud detection:
-<p align="center">
-  <img src="assets/feature_importance.png" alt="Feature Importance" width="600">
-</p>
-
+* **Feature Importance**: Using Random Forest (No PCA), we identified the most influential features contributing to fraud detection
 * **Threshold Tuning**: Since fraud detection is highly sensitive, we analyzed the impact of changing the classification threshold on the Random Forest model:
   * **Low Threshold (e.g., 0.3)** ➡️ Catches almost all fraud (High Recall) but increases false alarms (Lower Precision).
   * **High Threshold (e.g., 0.7)** ➡️ Reduces false alarms (High Precision) but might miss some fraud (Lower Recall).
 
 ### 📈 ROC-AUC Curve
 The Receiver Operating Characteristic curve illustrates our model's capability to distinguish between classes:
-<p align="center">
-  <img src="assets/roc_curve.png" alt="ROC AUC Curve" width="500">
-</p>
-
 ---
 
 ## 🛠️ How to Run this Project
