@@ -85,7 +85,7 @@ The models were evaluated comprehensively across key metrics. Below is a compari
 
 ### 📊 Performance Comparison Chart
 <p align="center">
-  <img src="E:\Downloads\newplot.png" alt="Before vs After PCA Comparison" width="800">
+  <img src="newplot.png" alt="Before vs After PCA Comparison" width="800">
 </p>
 
 ---
